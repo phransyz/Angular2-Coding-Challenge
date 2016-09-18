@@ -1,0 +1,13 @@
+<p>
+  game works!
+</p>
+<header>Choose Higher or Lower</header>
+<button (click)="higher()">Higher</button>
+<button (click)="lower()">Lower</button>
+
+{{deck[0] | json}}
+
+<li><label>Card for player 1: </label><br>
+  <div *ngFor="let x of deck">
+    Value: {{ x.value }}    Image:<img src="{{ x.image }}"/> </div>
+</li>

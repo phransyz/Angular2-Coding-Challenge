@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <h1>{{title}}</h1>
+  <nav>
+    <ul>
+      <li><a [routerLink]="['/']">Home</a></li>
+      <li><a [routerLink]="['movie']">Movies</a></li>
+      <li><a [routerLink]="['game']">Game</a></li>
+      <li><a [routerLink]="['joke']">Joke</a></li>
+    </ul>
+  </nav>
+</header>
+<section id="main">
+<!--app-home></app-home-->
+<router-outlet></router-outlet>
+</section>

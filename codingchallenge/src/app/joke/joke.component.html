@@ -1,0 +1,11 @@
+<p>
+  joke works!
+</p>
+ <input #jokes (keyup)="displayJokes(jokes.value)">
+<button (click)="displayJokes(jokes.value)">Refresh Jokes!</button>
+<ol>
+  <div *ngFor="let x of joke.value">
+    <li>
+    ID: {{ x.id }}  <br>  Joke: {{ x.joke }}</li>
+  </div>
+</ol>
