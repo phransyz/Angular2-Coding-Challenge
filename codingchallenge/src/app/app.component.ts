@@ -10,5 +10,5 @@ import { ROUTER_DIRECTIVES } from "@angular/router";
   directives: [HomeComponent, ROUTER_DIRECTIVES]
 })
 export class AppComponent {
-  title = 'app works';
+
 }
