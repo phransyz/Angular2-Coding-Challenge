@@ -1,4 +1,6 @@
-export class CodingchallengePage {
+import { browser, element, by } from 'protractor/globals';
+
+export class ExamplePage {
   navigateTo() {
     return browser.get('/');
   }

@@ -1,10 +1,10 @@
-import { CodingchallengePage } from './app.po';
+import { ExamplePage } from './app.po';
 
-describe('codingchallenge App', function() {
-  let page: CodingchallengePage;
+describe('example App', function() {
+  let page: ExamplePage;
 
   beforeEach(() => {
-    page = new CodingchallengePage();
+    page = new ExamplePage();
   });
 
   it('should display message saying app works', () => {
