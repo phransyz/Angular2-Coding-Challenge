@@ -3,7 +3,6 @@ import { DataService } from '../data.service';
 
 
 @Component({
-    moduleId: module.id,
     selector: 'app-game',
     templateUrl: 'game.component.html',
     styleUrls: ['game.component.css'],

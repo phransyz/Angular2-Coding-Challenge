@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
-    moduleId: module.id,
     selector: 'app-joke',
     templateUrl: 'joke.component.html',
     styleUrls: ['joke.component.css'],
