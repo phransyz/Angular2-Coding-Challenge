@@ -1,3 +1,4 @@
+/*Styling of body tag*/
 body {
 	font-family: "Slabo 27px", serif;
 	color: #747704;
@@ -6,10 +7,12 @@ body {
   background: #FCFBE3;
 }
 
+/*Styling of movie class*/
 .movie {
 		word-wrap: break-word;
 }
 
+/*Styling of nav bar*/
 nav {
   width: 100%;
 }
@@ -29,6 +32,13 @@ nav a {
   text-decoration: none;
 }
 
+nav li {
+  flex-basis: 0;
+  flex-grow: 1;
+  list-style-type: none;
+}
+
+/*Styling of id 'main'*/
 #main {
   background: #FFFFFF;
   padding: 20px;
@@ -39,12 +49,7 @@ nav a {
   border-right: 60px;
 }
 
-nav li {
-  flex-basis: 0;
-  flex-grow: 1;
-  list-style-type: none;
-}
-
+/*Styling of images*/
 img {
 	max-width: 100%;
 	max-height: 100%;

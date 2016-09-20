@@ -4,6 +4,7 @@ import { MovieComponent } from "./movie/movie.component";
 import { HomeComponent } from "./home/home.component";
 import { provideRouter } from "@angular/router";
 
+//A constant to define the routes for links
 const APP_ROUTES = [
   { path: 'game', component: GameComponent },
   { path: 'joke', component: JokeComponent },

@@ -1,19 +1,23 @@
+<!--Section for displaying buttons and results-->
 <section class="buttons">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
       </div>
       <div class="col-md-4 text-center">
+        <!--Show the higher or lower buttons for playing-->
         <div *ngIf = "buttons">
-          <header>Choose Higher or Lower</header>
+          <header><h1>Choose Higher or Lower</h1></header>
           <button (click)="higher()">Higher</button>
           <button (click)="lower()">Lower</button>
         </div>
+        <!--Show tryagain button after result is shown-->
         <div *ngIf = "tryagain">
           <button (click)="getCards()">Try Again</button>
         </div>
         <br>
-        <div *ngIf = "equal"><strong>Cards are equal</strong></div>
+        <!--Display the result-->
+        <div *ngIf = "equal"><strong>Cards are equal.</strong></div>
         <div *ngIf = "correct"><strong>You Win!</strong></div>
         <div *ngIf = "wrong"><strong>Better Luck Next Time</strong></div>
       </div>
@@ -23,15 +27,18 @@
   </div>
 </section>
 
+<!--Section for displaying cards-->
 <section class="cardDisplay">
   <div class="container">
     <div class="row">
     </div>
     <div class="row">
       <div class="col-md-6">
+        <!--Show image of player 1-->
         <div class="col-md-6">
           <img class="img-responsive img-circle" src="/img/dp.jpg" alt="image"/>
         </div>
+        <!--Show card value and image of player 1-->
         <div class="col-md-6">
           Player 1
           <div *ngFor="let x of deck; let i=index; let first = first" >
@@ -44,6 +51,7 @@
         </div>
       </div>
       <div class="col-md-6">
+        <!--Show card value and image of player 2-->
         <div class="col-md-6">
           Player 2
           <div *ngIf = "check">
@@ -56,8 +64,10 @@
             </div>
           </div>
         </div>
+        <!--Show image of end-user i.e. player 2-->
         <div class="col-md-6">
-          <img class="img-responsive img-circle" src="/img/unknown.png" alt="image"/>
+          <img class="img-responsive img-circle" src="/img/unknown.png"
+          alt="image"/>
         </div>
         <div class="col-md-6">
         </div>

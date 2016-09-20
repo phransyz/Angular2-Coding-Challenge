@@ -11,12 +11,13 @@ import { DataService } from '../data.service';
 
 export class MovieComponent implements OnInit {
 
+  //Variable to store the data returned by API
   movies = [];
 
-  constructor(private dataService: DataService) {
-        setTimeout(()=> this.movies, 1000);
-    }
+  constructor(private dataService: DataService) {}
 
+  //This method runs during initialization. It calls data.service.ts file's
+  //fetchData method to get the data.
   ngOnInit() {
         this.dataService.fetchData().subscribe(
             (data) => this.movies = data,
@@ -25,6 +26,7 @@ export class MovieComponent implements OnInit {
         );
     }
 
+    //Prints error in console.
     logError(err) {
         console.error('There was an error: ' + err);
     }

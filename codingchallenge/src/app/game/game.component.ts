@@ -13,7 +13,10 @@ export class GameComponent implements OnInit {
 
     constructor(private dataService: DataService) { }
 
+    //Variable to store the data returned by API
     deck=[];
+
+    //Variables to determine which div to show or hide
     check = false;
     equal = false;
     correct = false;
@@ -21,15 +24,19 @@ export class GameComponent implements OnInit {
     buttons = true;
     tryagain = false;
 
+    //Variables to store the value of cards in string and in integer
     player1 = '';
     player2 = '';
     play1 = 0;
     play2 = 0;
 
+    //This method runs during initialization. It calls getCard() which further
+    //calls data.service.ts file's getCards() to fetch the data from the API.
     ngOnInit() {
         this.getCards();
     }
 
+    //It calls data.service.ts file's getCards() to fetch the data from the API.
     getCards(){
 
         this.buttons = true;
@@ -46,10 +53,12 @@ export class GameComponent implements OnInit {
         );
     }
 
+    //Prints the error to the console
     logError(err) {
         console.error('There was an error: ' + err);
     }
 
+    //Map the value of cards with integer value
     common(){
         this.check = true;
         this.buttons = false;
@@ -83,6 +92,7 @@ export class GameComponent implements OnInit {
 
     }
 
+    //Called whenever end-user guesses higher value
     higher(){
         this.common();
         if(this.play1  == this.play2){
@@ -95,6 +105,7 @@ export class GameComponent implements OnInit {
 
     }
 
+    //Called whenever end-user guesses lower value
     lower(){
         this.common();
         if(this.play1  == this.play2){
