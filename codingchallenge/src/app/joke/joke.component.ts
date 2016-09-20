@@ -22,13 +22,13 @@ export class JokeComponent implements OnInit {
             this.dataService.displayJoke(val).subscribe(
                 (data) => this.joke = data,
                 err => this.logError(err),
-                () => console.log('Random Quote Complete')
+                () => console.log('Joke Fetch Selected')
             );
         }else {
             this.dataService.displayJoke(0).subscribe(
                 (data) => this.joke = data,
                 err => this.logError(err),
-                () => console.log('Random Quote Complete')
+                () => console.log('0 Joke Fetched')
             );
         }
     }

@@ -6,6 +6,10 @@ body {
   background: #FCFBE3;
 }
 
+.movie {
+		word-wrap: break-word;
+}
+
 nav {
   width: 100%;
 }

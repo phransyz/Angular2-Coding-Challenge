@@ -21,7 +21,7 @@ export class MovieComponent implements OnInit {
         this.dataService.fetchData().subscribe(
             (data) => this.movies = data,
             err => this.logError(err),
-            () => console.log('Random Quote Complete')
+            () => console.log('Movie Details Fetch Complete')
         );
     }
 

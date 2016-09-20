@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 text-center">
       <input #jokes (keyup)="displayJokes(jokes.value)">
       <button (click)="displayJokes(jokes.value)">Refresh Jokes!</button>
     </div>
@@ -13,7 +13,7 @@
            ID: {{ x.id }}  <br>  Joke: {{ x.joke }}
          </li>
        </div>
-       </ol>
+      </ol>
     </div>
   </div>
 </div>

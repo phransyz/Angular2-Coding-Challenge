@@ -1,10 +1,67 @@
-<header>Choose Higher or Lower</header>
-<button (click)="higher()">Higher</button>
-<button (click)="lower()">Lower</button>
+<section class="buttons">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4 text-center">
+        <div *ngIf = "buttons">
+          <header>Choose Higher or Lower</header>
+          <button (click)="higher()">Higher</button>
+          <button (click)="lower()">Lower</button>
+        </div>
+        <div *ngIf = "tryagain">
+          <button (click)="getCards()">Try Again</button>
+        </div>
+        <br>
+        <div *ngIf = "equal"><strong>Cards are equal</strong></div>
+        <div *ngIf = "correct"><strong>You Win!</strong></div>
+        <div *ngIf = "wrong"><strong>Better Luck Next Time</strong></div>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</section>
 
-{{deck[0] | json}}
-
-<li><label>Card for player 1: </label><br>
-  <div *ngFor="let x of deck">
-    Value: {{ x.value }}    Image:<img src="{{ x.image }}"/> </div>
-</li>
+<section class="cardDisplay">
+  <div class="container">
+    <div class="row">
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="col-md-6">
+          <img class="img-responsive img-circle" src="/img/dp.jpg" alt="image"/>
+        </div>
+        <div class="col-md-6">
+          Player 1
+          <div *ngFor="let x of deck; let i=index; let first = first" >
+            <div *ngIf = "first">
+              Value: {{ x.value }}
+              <br>
+              <img class="img-responsive" alt="Player 1" src="{{ x.image }}"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-6">
+          Player 2
+          <div *ngIf = "check">
+            <div *ngFor="let x of deck; let i=index; let last = last" >
+              <div *ngIf = "last">
+                Value: {{ x.value }}
+                <br>
+                <img class="img-responsive" alt="Player 2" src="{{ x.image }}"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-responsive img-circle" src="/img/unknown.png" alt="image"/>
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
