@@ -1,45 +1,42 @@
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <img class="img-responsive" src="/img/dp.jpg" alt="logo"/>
-      </div>
-      <div class="col-md-9">
-        <p>
-          Hi, I’m Riya Dashoriya.
-        </p>
-        <p>
-          Nerd. Love to Code – anything, everything. Zeal to learn. Adventurous.
-          Love the Change. Happy. Positive. Motivated. Self-starter.
-          Passion for New Technology. Crazy.
-        </p>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <img class="img-responsive" src="/img/dp.jpg" alt="logo"/>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Interests</h2>
-        <p>
-          Listening music, reading about new technology
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Projects</h2>
-        <a href="https://github.com/riyadashoriya/Movie_Trailer_Website"><h3>Movie Trailer Website</h3></a>
-        <p>
-         This is a Movie Trailer Website developed using Python for Udacity's Full Stack Web Developer Nanodegree Plus Program.
-        </p>
-        <a href="https://github.com/riyadashoriya/Build-a-Portfolio-Site"><h3>Build a Portfolio Site</h3></a>
-        <p>
-          A responsive website that display images, descriptions and links to each of the portfolio projects done as a part of Udacity's Full Stack Web Developer Nanodegree.
-        </p>
-        <a href="http://loki.ist.unomaha.edu/~rdashoriya/project/"><h3>Cookies with a Conscience</h3></a>
-        <p>
-          As a part of final project for “Introduction to Web Development” (Subject at University of Nebraska at Omaha, Nebraska, USA).
-          A website for a club named “Cookies with a Conscience” which makes and sell cookies for charity.
-          Fully developed using HTML, CSS, PHP and Perl.
-        </p>
-      </div>
+    <div class="col-md-9">
+      <p>
+        {{ description1 }}
+      </p>
+      <p>
+        {{ description2 }}
+      </p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Interests</h2>
+      <p>
+        {{ interests }}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Projects</h2>
+      <a href="https://github.com/riyadashoriya/Movie_Trailer_Website" target="_blank"><h3>Movie Trailer Website</h3></a>
+      <p>
+       {{ project1 }}
+      </p>
+      <a href="https://github.com/riyadashoriya/Build-a-Portfolio-Site" target="_blank"><h3>Build a Portfolio Site</h3></a>
+      <p>
+        {{ project2 }}
+      </p>
+      <a href="http://loki.ist.unomaha.edu/~rdashoriya/project/" target="_blank"><h3>Cookies with a Conscience</h3></a>
+      <p>
+        As a part of final project for “Introduction to Web Development” (Subject at University of Nebraska at Omaha, Nebraska, USA).
+        A website for a club named “Cookies with a Conscience” which makes and sell cookies for charity.
+        Fully developed using HTML, CSS, PHP and Perl.
+      </p>
+    </div>
+  </div>
+</div>
