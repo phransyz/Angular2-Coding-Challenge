@@ -1,6 +1,6 @@
 # Angular2-Coding-Challenge
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15. This coding challenge is a part of Berkadia's Intern program. 
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15. This coding challenge is a part of Berkadia's Intern program. Note: This is no longer supported (since December 2016).
 
 ## A brief description
 This Angular2 project has 5 components explained below. It also uses Bootstrap, CSS Framework.
